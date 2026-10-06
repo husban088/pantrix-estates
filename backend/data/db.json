@@ -1,0 +1,350 @@
+{
+  "properties": [
+    {
+      "id": "4b9f273c-8461-403e-99eb-32434b31e002",
+      "title": "Marble Crest Villa",
+      "category": "Villa",
+      "type": "sale",
+      "price": 1850000,
+      "city": "Islamabad",
+      "area": "F-7 Markaz",
+      "address": "Street 12, F-7/2, Islamabad",
+      "beds": 6,
+      "baths": 7,
+      "sqft": 7200,
+      "featured": true,
+      "status": "available",
+      "description": "A sculpted marble villa with double-height living spaces, a private cinema, a heated infinity pool and a landscaped courtyard that opens to the Margalla hills. Every room is wrapped in natural light.",
+      "amenities": [
+        "Infinity pool",
+        "Private cinema",
+        "Smart home",
+        "Garden",
+        "Gym",
+        "4-car garage"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "createdAt": "2026-09-26T23:10:02.766Z"
+    },
+    {
+      "id": "aa9bdf50-87c2-49f3-9bbd-83c9b867c6be",
+      "title": "Skyline Penthouse",
+      "category": "Penthouse",
+      "type": "sale",
+      "price": 2900000,
+      "city": "Dubai",
+      "area": "Downtown Dubai",
+      "address": "Boulevard Heights, Downtown Dubai",
+      "beds": 4,
+      "baths": 5,
+      "sqft": 5100,
+      "featured": true,
+      "status": "available",
+      "description": "Full-floor penthouse with 360-degree skyline views, a wraparound terrace, a private lift lobby and concierge service from the building lobby to your door.",
+      "amenities": [
+        "Private terrace",
+        "Concierge",
+        "Private lift",
+        "Sky lounge",
+        "Spa",
+        "Valet"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "createdAt": "2026-09-27T23:10:02.768Z"
+    },
+    {
+      "id": "e40f0775-0cd4-4582-bffb-7e0505c0760f",
+      "title": "Garden Terrace Residence",
+      "category": "House",
+      "type": "sale",
+      "price": 760000,
+      "city": "Lahore",
+      "area": "DHA Phase 6",
+      "address": "Block C, DHA Phase 6, Lahore",
+      "beds": 5,
+      "baths": 5,
+      "sqft": 4500,
+      "featured": true,
+      "status": "available",
+      "description": "A warm family home with a sunken lounge, a chef kitchen and terraces on every level, set on a quiet tree-lined street close to schools and parks.",
+      "amenities": [
+        "Terrace garden",
+        "Chef kitchen",
+        "Solar panels",
+        "Servant quarter",
+        "Study"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "createdAt": "2026-09-28T23:10:02.768Z"
+    },
+    {
+      "id": "af260035-0bac-4860-88ea-7fea5845af37",
+      "title": "Seaview Signature Apartment",
+      "category": "Apartment",
+      "type": "rent",
+      "price": 4200,
+      "city": "Karachi",
+      "area": "Clifton Block 4",
+      "address": "Emaar Crescent Bay, Clifton, Karachi",
+      "beds": 3,
+      "baths": 3,
+      "sqft": 2400,
+      "featured": true,
+      "status": "available",
+      "description": "Fully furnished sea-facing apartment with floor-to-ceiling glass, a private balcony and access to the beach club, pool and fitness studio.",
+      "amenities": [
+        "Sea view",
+        "Furnished",
+        "Beach club",
+        "Pool",
+        "Gym",
+        "24/7 security"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "createdAt": "2026-09-29T23:10:02.769Z"
+    },
+    {
+      "id": "244d2eef-3f51-472a-9a08-eaba63ee77cd",
+      "title": "The Olive Courtyard House",
+      "category": "House",
+      "type": "sale",
+      "price": 540000,
+      "city": "Islamabad",
+      "area": "Bahria Town Phase 4",
+      "address": "Street 5, Bahria Town Phase 4, Islamabad",
+      "beds": 4,
+      "baths": 4,
+      "sqft": 3300,
+      "featured": false,
+      "status": "available",
+      "description": "Mediterranean-inspired home built around an olive courtyard, with arched windows, a reading loft and a generous covered veranda.",
+      "amenities": [
+        "Courtyard",
+        "Reading loft",
+        "Veranda",
+        "Solar panels"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "createdAt": "2026-09-30T23:10:02.770Z"
+    },
+    {
+      "id": "b907d9c7-cd9c-4b67-a9ef-3926ebbaa8d7",
+      "title": "Palm Harbour Villa",
+      "category": "Villa",
+      "type": "rent",
+      "price": 11500,
+      "city": "Dubai",
+      "area": "Palm Jumeirah",
+      "address": "Frond K, Palm Jumeirah, Dubai",
+      "beds": 5,
+      "baths": 6,
+      "sqft": 6000,
+      "featured": true,
+      "status": "available",
+      "description": "Beachfront villa on the Palm with a private jetty, outdoor kitchen, staff suite and pool deck that steps directly onto the sand.",
+      "amenities": [
+        "Private beach",
+        "Jetty",
+        "Outdoor kitchen",
+        "Staff suite",
+        "Pool"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "createdAt": "2026-10-01T23:10:02.770Z"
+    },
+    {
+      "id": "18494041-f8ec-44cc-8eee-6d6553645b7b",
+      "title": "Executive Loft Suites",
+      "category": "Apartment",
+      "type": "sale",
+      "price": 310000,
+      "city": "Lahore",
+      "area": "Gulberg III",
+      "address": "MM Alam Road, Gulberg III, Lahore",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 1500,
+      "featured": false,
+      "status": "available",
+      "description": "Modern loft apartments with high ceilings, brick-and-glass detailing and a rooftop lounge, minutes from the best cafes and offices in Gulberg.",
+      "amenities": [
+        "Rooftop lounge",
+        "Backup power",
+        "Covered parking",
+        "Gym"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "createdAt": "2026-10-02T23:10:02.771Z"
+    },
+    {
+      "id": "f8e51073-1c7f-413e-8c8a-c7bc72c33dd7",
+      "title": "Hillcrest Land Parcel",
+      "category": "Land",
+      "type": "sale",
+      "price": 420000,
+      "city": "Islamabad",
+      "area": "Park Road",
+      "address": "Park Road, Islamabad",
+      "beds": 0,
+      "baths": 0,
+      "sqft": 10890,
+      "featured": false,
+      "status": "available",
+      "description": "Rare 1-kanal-plus corner parcel with mountain views, all utilities in place and clear title, ready for your own design.",
+      "amenities": [
+        "Corner plot",
+        "Utilities ready",
+        "Clear title",
+        "Mountain view"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "createdAt": "2026-10-03T23:10:02.772Z"
+    },
+    {
+      "id": "6affd279-cfe9-4295-b807-c3f91f4ed852",
+      "title": "Mayfair Corner Townhouse",
+      "category": "House",
+      "type": "sale",
+      "price": 2150000,
+      "city": "London",
+      "area": "Mayfair",
+      "address": "Curzon Street, Mayfair, London",
+      "beds": 5,
+      "baths": 4,
+      "sqft": 3900,
+      "featured": true,
+      "status": "available",
+      "description": "Restored Georgian townhouse with period cornices, a modern glass extension and a quiet walled garden in the heart of Mayfair.",
+      "amenities": [
+        "Walled garden",
+        "Wine cellar",
+        "Lift",
+        "Home office"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "createdAt": "2026-10-04T23:10:02.773Z"
+    }
+  ],
+  "inquiries": [
+    {
+      "id": "0873c86a-a150-427b-b9cb-5b4421d1108d",
+      "name": "Ayesha Khan",
+      "email": "ayesha@example.com",
+      "phone": "+92 300 1234567",
+      "message": "I would like to visit this villa this weekend with my family. Is Saturday afternoon possible?",
+      "budget": 1900000,
+      "status": "new",
+      "score": 90,
+      "grade": "Hot",
+      "createdAt": "2026-10-04T23:10:02.688Z",
+      "propertyId": "4b9f273c-8461-403e-99eb-32434b31e002",
+      "propertyTitle": "Marble Crest Villa"
+    },
+    {
+      "id": "b7ed83d3-eee8-4c0a-8f8d-dd4d70aa1994",
+      "name": "Omar Siddiqui",
+      "email": "omar@example.com",
+      "phone": "",
+      "message": "Please share the floor plan.",
+      "budget": 2500000,
+      "status": "contacted",
+      "score": 60,
+      "grade": "Warm",
+      "createdAt": "2026-09-23T23:10:02.690Z",
+      "propertyId": "4b9f273c-8461-403e-99eb-32434b31e002",
+      "propertyTitle": "Marble Crest Villa"
+    },
+    {
+      "id": "a481e645-1e95-4dab-b7dd-075bab86c974",
+      "name": "Sara Malik",
+      "email": "sara@example.com",
+      "phone": "+92 321 7654321",
+      "message": "Is the rent negotiable for a 2 year lease? We are relocating from Dubai next month.",
+      "budget": 3800,
+      "status": "closed",
+      "score": 65,
+      "grade": "Warm",
+      "createdAt": "2026-08-31T23:10:02.690Z",
+      "propertyId": "4b9f273c-8461-403e-99eb-32434b31e002",
+      "propertyTitle": "Marble Crest Villa"
+    },
+    {
+      "id": "f34cdf16-9aa6-4487-a0eb-3ef1586daa4c",
+      "name": "Hamza Tariq",
+      "email": "hamza@example.com",
+      "phone": "+92 333 9988776",
+      "message": "Interested in the land parcel, can you send the title documents and survey map?",
+      "budget": 450000,
+      "status": "new",
+      "score": 100,
+      "grade": "Hot",
+      "createdAt": "2026-10-02T23:10:02.690Z",
+      "propertyId": "4b9f273c-8461-403e-99eb-32434b31e002",
+      "propertyTitle": "Marble Crest Villa"
+    },
+    {
+      "id": "29d7597d-81d2-4bb8-87a7-91afe4720971",
+      "name": "Lina Ahmed",
+      "email": "lina@example.com",
+      "phone": "",
+      "message": "Price?",
+      "budget": 0,
+      "status": "new",
+      "score": 20,
+      "grade": "Cold",
+      "createdAt": "2026-08-11T23:10:02.690Z",
+      "propertyId": "4b9f273c-8461-403e-99eb-32434b31e002",
+      "propertyTitle": "Marble Crest Villa"
+    },
+    {
+      "id": "a9c5f62b-962c-444a-be58-42e94bdd2479",
+      "name": "Daniel Reed",
+      "email": "daniel@example.com",
+      "phone": "+44 7700 900123",
+      "message": "Looking for a London townhouse for our family, please call me to discuss viewing options.",
+      "budget": 2100000,
+      "status": "contacted",
+      "score": 85,
+      "grade": "Hot",
+      "createdAt": "2026-07-22T23:10:02.690Z",
+      "propertyId": "4b9f273c-8461-403e-99eb-32434b31e002",
+      "propertyTitle": "Marble Crest Villa"
+    }
+  ]
+}
