@@ -10,6 +10,7 @@ import { createStore } from "./store";
 import { seedIfEmpty } from "./seed";
 import { signToken, requireAdmin } from "./auth";
 import * as svc from "./services";
+import { userRoutes } from "./users";
 
 const app = express();
 const store = createStore();
@@ -217,14 +218,12 @@ app.post(
       return res
         .status(400)
         .json({ error: "Title, price and city are required" });
-    res
-      .status(201)
-      .json(
-        await store.create("properties", {
-          ...data,
-          createdAt: new Date().toISOString(),
-        }),
-      );
+    res.status(201).json(
+      await store.create("properties", {
+        ...data,
+        createdAt: new Date().toISOString(),
+      }),
+    );
   }),
 );
 
@@ -284,12 +283,10 @@ app.post(
         );
       } else {
         if (onVercel)
-          return res
-            .status(500)
-            .json({
-              error:
-                "Live site par images ke liye Cloudinary keys set karna zaroori hai",
-            });
+          return res.status(500).json({
+            error:
+              "Live site par images ke liye Cloudinary keys set karna zaroori hai",
+          });
         const ext =
           (
             {
@@ -438,6 +435,9 @@ app.get(
     });
   }),
 );
+
+// ---------- users (signup, login, forgot password, profile) ----------
+app.use("/api", userRoutes(store));
 
 app.use("/api", (_req, res) => res.status(404).json({ error: "Not found" }));
 app.use((err: Error, _req: Request, res: Response, _next: NextFunction) => {

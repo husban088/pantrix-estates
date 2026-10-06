@@ -1,24 +1,29 @@
-import { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { Lock } from 'lucide-react';
-import { api, auth } from '../api';
-import Logo from '../components/Logo';
+import { useState } from "react";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
+import { Lock } from "lucide-react";
+import { useAuth } from "../context/AuthContext";
+import AuthCard, { FormError } from "../components/AuthCard";
+import PasswordField from "../components/PasswordField";
 
 export default function Login() {
   const nav = useNavigate();
-  const [f, setF] = useState({ email: 'admin@pantrix.com', password: '' });
-  const [err, setErr] = useState('');
+  const loc = useLocation();
+  const { user, login } = useAuth();
+  const from = (loc.state as { from?: string } | null)?.from || "/profile";
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [err, setErr] = useState("");
   const [busy, setBusy] = useState(false);
+
+  if (user) return <Navigate to={from} replace />;
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     setBusy(true);
-    setErr('');
+    setErr("");
     try {
-      const r = await api.post<{ token: string }>('/auth/login', f);
-      auth.set(r.token);
-      nav('/dashboard', { replace: true });
+      await login(email, password);
+      nav(from, { replace: true });
     } catch (x) {
       setErr((x as Error).message);
     } finally {
@@ -27,20 +32,54 @@ export default function Login() {
   };
 
   return (
-    <div className="container-x grid min-h-[70vh] place-items-center py-16">
-      <motion.div initial={{ opacity: 0, y: 24, scale: 0.98 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ duration: 0.6 }} className="card w-full max-w-md p-8 sm:p-10">
-        <div className="flex justify-center"><Logo /></div>
-        <h1 className="mt-8 text-center text-4xl font-semibold text-pine-800">Admin sign in</h1>
-        <p className="mt-2 text-center text-sm text-muted">Manage listings, inquiries and insights.</p>
-        <form onSubmit={submit} className="mt-8 space-y-4">
-          <div><label className="label">Email</label><input className="field" type="email" required value={f.email} onChange={(e) => setF({ ...f, email: e.target.value })} /></div>
-          <div><label className="label">Password</label><input className="field" type="password" required value={f.password} onChange={(e) => setF({ ...f, password: e.target.value })} placeholder="Enter your password" /></div>
-          {err && <p className="rounded-xl bg-red-50 px-4 py-3 text-sm text-red-700">{err}</p>}
-          <button className="btn-primary w-full" disabled={busy}><Lock size={16} /> {busy ? 'Signing in...' : 'Sign in'}</button>
-        </form>
-        <p className="mt-6 rounded-xl bg-pine-50 px-4 py-3 text-center text-xs text-muted">Login details backend/.env file me hain (ADMIN_EMAIL aur ADMIN_PASSWORD).</p>
-        <p className="mt-5 text-center text-sm text-muted"><Link to="/" className="link-line font-semibold text-pine-700">Back to website</Link></p>
-      </motion.div>
-    </div>
+    <AuthCard
+      title="Welcome back"
+      subtitle="Sign in to see and manage your profile."
+    >
+      <form onSubmit={submit} className="space-y-4">
+        <div>
+          <label className="label">Email</label>
+          <input
+            className="field"
+            type="email"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="you@example.com"
+            autoComplete="email"
+          />
+        </div>
+        <PasswordField
+          label="Password"
+          value={password}
+          onChange={setPassword}
+          placeholder="Enter your password"
+          autoComplete="current-password"
+        />
+        <div className="text-right">
+          <Link
+            to="/forgot-password"
+            className="link-line text-xs font-semibold text-pine-700"
+          >
+            Forgot password?
+          </Link>
+        </div>
+        <FormError msg={err} />
+        <button className="btn-primary w-full" disabled={busy}>
+          <Lock size={16} /> {busy ? "Signing in..." : "Sign in"}
+        </button>
+      </form>
+      <p className="mt-6 text-center text-sm text-muted">
+        Account nahi hai?{" "}
+        <Link to="/signup" className="link-line font-semibold text-pine-700">
+          Sign up
+        </Link>
+      </p>
+      <p className="mt-3 text-center text-sm text-muted">
+        <Link to="/" className="link-line font-semibold text-pine-700">
+          Back to website
+        </Link>
+      </p>
+    </AuthCard>
   );
 }

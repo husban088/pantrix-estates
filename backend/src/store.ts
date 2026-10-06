@@ -3,7 +3,7 @@ import path from "path";
 import crypto from "crypto";
 import admin from "firebase-admin";
 
-export type Col = "properties" | "inquiries";
+export type Col = "properties" | "inquiries" | "users";
 
 export interface Store {
   mode: "firestore" | "local";
@@ -21,7 +21,7 @@ function localStore(): Store {
     : path.join(__dirname, "..", "data");
   const file = path.join(dir, "db.json");
   fs.mkdirSync(dir, { recursive: true });
-  let db: Record<Col, any[]> = { properties: [], inquiries: [] };
+  let db: Record<Col, any[]> = { properties: [], inquiries: [], users: [] };
   if (fs.existsSync(file)) {
     try {
       db = { ...db, ...JSON.parse(fs.readFileSync(file, "utf8")) };
